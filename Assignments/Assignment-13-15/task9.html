@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var colors = ["Red", "Green", "Blue"];
+        document.write("Original Array: " + colors + "<br>");
+
+        // Ask the user what color to add to the beginning
+        var colorToAdd = prompt("Enter a color to add to the beginning:");
+        colors.unshift(colorToAdd);
+        document.write("Updated Array (Added to the Beginning): " + colors + "<br>");
+
+        // Ask the user what color to add to the end
+        colorToAdd = prompt("Enter a color to add to the end:");
+        colors.push(colorToAdd);
+        document.write("Updated Array (Added to the End): " + colors + "<br>");
+
+        // Add two more colors to the beginning of the array
+        colors.unshift("Purple", "Yellow");
+        document.write("Updated Array (Added two colors to the Beginning): " + colors + "<br>");
+
+        // Delete the first color in the array
+        colors.shift();
+        document.write("Updated Array (Deleted the first color): " + colors + "<br>");
+
+        // Delete the last color in the array
+        colors.pop();
+        document.write("Updated Array (Deleted the last color): " + colors + "<br>");
+
+        // Add the color to the desired position/index
+        var indexToAdd = prompt("Enter the index at which you want to add a color:");
+        var colorName = prompt("Enter the color name to add:");
+        colors.splice(indexToAdd, 0, colorName);
+        document.write("Updated Array (Added color at index " + indexToAdd + "): " + colors + "<br>");
+
+        // Remove the specified number of color(s) from the user-defined position/index
+        var indexToDelete = prompt("Enter the index from which you want to delete color(s):");
+        var deleteCount = prompt("Enter the number of colors to delete:");
+        colors.splice(indexToDelete, deleteCount);
+        document.write("Updated Array (Deleted " + deleteCount + " color(s) from index " + indexToDelete + "): " + colors + "<br>");
+    </script>
+</body>
+</html>

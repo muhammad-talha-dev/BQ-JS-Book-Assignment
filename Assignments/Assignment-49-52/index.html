@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment-41-52</h1>
+
+    <div id="task1">
+        <h2>Task 1</h2>
+        <h3>Signup Form</h3>
+        <form id="signupForm" onsubmit="displayFormData(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <ul id="formDataList"></ul>
+    </div>
+
+    <div id="task2">
+        <div class="item">
+            <h2>Task 2</h2>
+            <p id="item-summary">This is the summary of Item 1.</p>
+            <p id="item-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vel facere totam, animi quo quis optio enim ullam perspiciatis velit dolor sit dicta. Quis, pariatur. Aliquid reiciendis eaque ad obcaecati.</p>
+            <button id="btn" onclick="toggleDetails(1)">Read more</button>
+        </div>
+    </div>
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>
